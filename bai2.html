@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="bai2.css" />
+    <title>hiệu chỉnh</title>
+  </head>
+  <body>
+    <div
+      id="box"
+      onmouseover="this.innerHTML = 'Mouse Event'"
+      onmouseout="this.innerHTML = 'Hover Me'"
+    >
+      Hover Me
+    </div>
+
+    <p>Di chuột vào hình ảnh bên dưới:</p>
+    <img
+      id="myImg"
+      src="https://via.placeholder.com/150"
+      width="150"
+      onmouseover="zoomIn(this)"
+      onmouseout="zoomOut(this)"
+    />
+    <br /><br />
+
+    <button onclick="showDateTime()">Xem ngày giờ hiện tại</button>
+    <br /><br />
+
+    <label>Nhập chữ thường: </label>
+    <input
+      type="text"
+      id="txtInput"
+      onkeyup="toUpperCaseText()"
+      placeholder="Gõ chữ vào đây..."
+    />
+
+    <script src="bai2.js"></script>
+  </body>
+</html>
